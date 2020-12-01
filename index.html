@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web node 🐢</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Julimarketing</h1>
+    <div class="current-question">
+        <button class="delete">X</button>
+        <div class="text">     
+            <h3>Pregunta actual</h3>
+            <h2 class="current-question__question "></h2>
+        </div>
+        <h4 class="current-question__average">0.0</h4>
+    </div>
+    <div class="send-question">
+        <h5>Escriba aquí la pregunta actual del focus group</h5>
+        <div class="send-question__inputs">
+            <input class="question-input" type="text" placeholder="Pregunta nueva">
+            <button class="send">ok</button>
+        </div>
+    </div>
+    <div class="history">
+        <h3>Histórico</h3>
+        <div class="history__elems">
+        
+            
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+    <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyCLjz64kCorNjRDA5DD53ItOGwGds7kMqE",
+        authDomain: "ecosemana11.firebaseapp.com",
+        databaseURL: "https://ecosemana11.firebaseio.com",
+        projectId: "ecosemana11",
+        storageBucket: "ecosemana11.appspot.com",
+        messagingSenderId: "687042299675",
+        appId: "1:687042299675:web:ed548565f6000d879b35be",
+        measurementId: "G-7WB9NKRNNL"
+    };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./scripts/Question.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
