@@ -28,7 +28,6 @@ sendQuestion.addEventListener('click', ()=>{
     }
 }); 
 
-
 //methods
 //modify real time
 //in the first part i bring back all the data, because, i want in a single movemment set the current question and the history ones
@@ -65,8 +64,12 @@ database.ref('questions').on('value',(data)=>{
                     }); 
                 }else{
                     //this is my history
-                    let questions = new Question(element.val());
-                    questionsContainer.insertBefore(questions.render(),questionsContainer.firstChild);
+                    if(element.val().id!= undefined){
+                        let questions = new Question(element.val());
+                        questionsContainer.insertBefore(questions.render(),questionsContainer.firstChild);
+                    }else{
+
+                    }
                 }
             }
     });
