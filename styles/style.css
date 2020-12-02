@@ -145,10 +145,33 @@ button:hover {
           flex-direction: column;
 }
 
+.history .question button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border: none;
+  width: 2em;
+  height: 2em;
+  background-color: #FB543E;
+  color: white;
+}
+
+.history .question button:hover {
+  background-color: #A297FF;
+}
+
 .history .question h5 {
   margin-top: 1em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #4D2EEE;
+}
+
+.question-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

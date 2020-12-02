@@ -21,6 +21,7 @@ body{
 }
 
 
+
 h1{
     text-align: center;
     margin-top: 1em;
@@ -104,10 +105,25 @@ button:hover{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        button{
+            align-self: flex-end;
+            border: none;
+            width: 2em;
+            height: 2em;
+            background-color: #FB543E;
+            color: rgb(255, 255, 255);
+        }
+        button:hover{
+            background-color: #A297FF;
+        }
         h5{
             margin-top: 1em;
             align-self: flex-end;
             color:  #4D2EEE;
         }
     }
+}
+.question-btn{
+    display: flex;
+    justify-content: space-between;
 }
